@@ -10,7 +10,7 @@
  */
 
 function sayHello(name){
-    return "Hello";
+    return "Hello" + name;
 }
 
 /**
@@ -20,6 +20,10 @@ function sayHello(name){
  *
  * console.log 'helloMessage' to check your work
  */
+
+var helloMessage = sayHello("Ricardo");
+
+console.log(helloMessage);
 
 /**
  * TODO:
