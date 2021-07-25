@@ -9,6 +9,10 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
+function sayHello(name){
+    return "Hello";
+}
+
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
