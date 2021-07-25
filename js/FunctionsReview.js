@@ -14,9 +14,12 @@
 // var two = increment(1);
 // console.log(two);
 
-function sum(a,b) {
-    var result = a + b;
-    return result;
-}
+// function sum(a,b) {
+//     var result = a + b;
+//     return result;
+// }
+//
+// console.log(sum(5,5))
 
-console.log(sum(5,5))
+
+
