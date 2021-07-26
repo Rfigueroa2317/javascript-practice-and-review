@@ -9,9 +9,9 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-function sayHello(name){
-    return "Hello" + name;
-}
+// function sayHello(name){
+//     return "Hello" + name;
+// }
 
 /**
  * TODO:
@@ -21,9 +21,9 @@ function sayHello(name){
  * console.log 'helloMessage' to check your work
  */
 
-var helloMessage = sayHello("Ricardo");
-
-console.log(helloMessage);
+// var helloMessage = sayHello("Ricardo");
+//
+// console.log(helloMessage);
 
 /**
  * TODO:
@@ -31,6 +31,10 @@ console.log(helloMessage);
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+// var myName = "Ricardo";
+
+// sayHello(myName);
+// console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -53,6 +57,14 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+
+    function isTwo(num){
+        return num === 2;
+}
+
+console.log(isTwo(3))
+// in this exercise you're working with booleans by pretty much checking if the number passed
+// on the console is 2. If it is, then it is true. If it's 1 or 3 then it is false.
 
 /**
  * TODO:
