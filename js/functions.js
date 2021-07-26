@@ -113,3 +113,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount(originalPrice, discountPercent){
+    var originalPrice = 100;
+    var discountAmount = originalPrice * discountPercent;
+    return(originalPrice - discountAmount).toFixed(2);
+}
+
+console.log(applyDiscount(100,0.1));
