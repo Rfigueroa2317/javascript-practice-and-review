@@ -58,11 +58,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-    function isTwo(num){
-        return num === 2;
-}
+    // function isTwo(num){
+    //     return num === 2;
+    // }
 
-console.log(isTwo(3))
+// console.log(isTwo(3))
 // in this exercise you're working with booleans by pretty much checking if the number passed
 // on the console is 2. If it is, then it is true. If it's 1 or 3 then it is false.
 
@@ -78,12 +78,26 @@ console.log(isTwo(3))
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+// function calculateTip(tip, billTotal){
+//     return tip * billTotal;
+// }
+
+// console.log(calculateTip(0.20, 20).toFixed(2));
+// console.log(calculateTip(.25, 25.5).toFixed(2));
+// console.log(calculateTip(.15,33.42).toFixed(2));
+
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+// console.log(`Your total is ${20}. how much would you like to tip? ${.20}`);
+// console.log(`your bill is:` + calculateTip(.20,25))
+
+
 
 /**
  * TODO:
