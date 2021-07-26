@@ -121,3 +121,5 @@ function applyDiscount(originalPrice, discountPercent){
 }
 
 console.log(applyDiscount(100,0.1));
+// the var originalPrice is not needed as the parameter is already doing that for you.
+
