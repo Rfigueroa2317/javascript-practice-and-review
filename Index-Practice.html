@@ -13,6 +13,7 @@
                 font-family: 'Urbanist', sans-serif;
                 color: white;
                 background: #202731;
+                overflow-x: hidden;
             }
 
             section {
@@ -24,34 +25,122 @@
                 padding: 100px 20vw;
             }
 
+            .blue {
+                background: #3c31dd;
+            }
+
+            .red {
+                background: #dd3f31;
+            }
+
+            .pink {
+                background: #ff0066;
+            }
+
+            .dark {
+                background: #0f0f10;
+            }
+
+
+            .curve {
+                position: absolute;
+                height: 225px;
+                width: 100%;
+                bottom: 0;
+            }
+
+            .curve::before {
+                content: '';
+                display: block;
+                position: absolute;
+                border-radius: 100% 50%;
+                width: 55%;
+                height: 100%;
+                background-color: #202731;
+                transform: translate(85%, 60%);
+            }
+
+            .curve::after {
+                content: '';
+                display: block;
+                position: absolute;
+                border-radius: 100% 50%;
+                width: 55%;
+                height: 100%;
+                background-color: #3c31dd;
+                transform: translate(-4%, 40%);
+                z-index: -1;
+            }
+
+            .bubble::after {
+                content: '';
+                border-top-left-radius: 50% 100%;
+                border-bottom-right-radius: 50% 100%;
+                position: absolute;
+                bottom: 0;
+                height: 85%;
+                width: 100%;
+                background-color: #0f0f10;
+                z-index: -1;
+            }
+
+            .custom-shape-divider-bottom-1629597218 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                line-height: 0;
+                transform: rotate(180deg);
+            }
+
+            .custom-shape-divider-bottom-1629597218 svg {
+                position: relative;
+                display: block;
+                width: calc(210% + 1.3px);
+                height: 131px;
+            }
+
+            .custom-shape-divider-bottom-1629597218 .shape-fill {
+                fill: #FFFFFF;
+            }
 
         </style>
 
     </head>
     <body>
-        <section>
+        <section class="blue">
             <h1>Nice Curves</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia nisi optio, quaerat ratione
                 totam. Aperiam debitis eos quasi repudiandae rerum similique voluptatum. Amet blanditiis ex neque
                 quaerat ratione. Vel.</p>
+            <div class="curve">for practice purpose</div>
         </section>
-        <section>
+        <section class="bubble">
             <h1>Nice Curves</h1>
             <p>In molestias placeat porro quam voluptas! Consequuntur eaque esse nostrum placeat repellat veritatis.
                 Atque dicta magni nam odio repellendus, voluptas. Commodi nam necessitatibus nemo perspiciatis quos sunt
                 voluptatibus. Iure, nihil!</p>
         </section>
-        <section>
+        <section class="dark">
             <h1>Nice Curves</h1>
             <p>Adipisci asperiores assumenda distinctio esse illum itaque placeat recusandae? A aperiam debitis
                 doloremque, eligendi illo laudantium molestiae quae quo sapiente sed. Autem cumque delectus, deleniti
                 dolorum facilis incidunt ratione recusandae.</p>
         </section>
-        <section>
+        <section class="red">
             <h1>Nice Curves</h1>
             <p>Commodi enim, explicabo inventore iusto magnam quasi repellat soluta velit? Accusamus, at aut deserunt
                 doloremque fugit in, inventore ipsum, maxime numquam odit quasi quidem reprehenderit voluptatum.
                 Corporis laboriosam nesciunt quas.</p>
+
+            <div class="custom-shape-divider-bottom-1629597218">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                     preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                          class="shape-fill"></path>
+                </svg>
+            </div>
         </section>
         <section>
             <h1>Nice Curves</h1>
@@ -59,7 +148,7 @@
                 obcaecati veritatis? Consequatur dicta expedita explicabo magni nostrum numquam obcaecati placeat
                 praesentium sequi velit?</p>
         </section>
-        <section>
+        <section class="green">
             <h1>Nice Curves</h1>
             <p>Accusamus beatae commodi dolorem eos ex explicabo illum magnam nisi, optio quaerat quos repellendus
                 reprehenderit soluta suscipit voluptatibus? Eum officia provident veniam. Eum expedita, nisi officiis
