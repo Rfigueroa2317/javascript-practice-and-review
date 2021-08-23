@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,300&display=swap" rel="stylesheet">
 
+        <script> src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"</script>
+
         <style>
             body {
                 margin: 0;
@@ -105,6 +107,31 @@
                 fill: #FFFFFF;
             }
 
+            .spacer {
+                aspect-ratio: 960/300;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .layer1 {
+                background-image: url('./layer1.svg');
+            }
+
+            .layer2 {
+                background-image: url('./layer2.svg');
+            }
+
+            .flip {
+                transform: rotate(180deg);
+            }
+
+            .blob-motion {
+                position: absolute;
+                transform: translate(-20%);
+            }
+
         </style>
 
     </head>
@@ -142,6 +169,8 @@
                 </svg>
             </div>
         </section>
+
+        <div class="spacer layer1"></div>
         <section>
             <h1>Nice Curves</h1>
             <p>Aliquam, at deserunt doloremque minus modi non nostrum qui ut. Debitis, dignissimos ea harum nesciunt non
@@ -154,12 +183,33 @@
                 reprehenderit soluta suscipit voluptatibus? Eum officia provident veniam. Eum expedita, nisi officiis
                 provident rem repellat ullam?</p>
         </section>
-        <section>
+
+        <div class="spacer layer2 flip"></div>
+        <section class="pink">
             <h1>Nice Curves</h1>
             <p>Beatae esse, maiores non omnis praesentium quaerat veritatis! Alias, dolorum fugit in laboriosam magni
                 nam porro repellendus saepe. Aut autem beatae dolor dolore dolorum eum non numquam reiciendis sed
                 ut.</p>
+
+            <svg id="visual" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+                <g transform="translate(474.97382645881186 154.30239538031248)"><path id="blob1" d="M82.5 -79.7C107.5 -57.5 128.8 -28.8 127.8 -0.9C126.9 26.9 103.7 53.7 78.7 73.6C53.7 93.4 26.9 106.2 2 104.2C-22.9 102.2 -45.7 85.4 -70.1 65.6C-94.4 45.7 -120.2 22.9 -117.6 2.6C-115 -17.7 -84 -35.4 -59.7 -57.5C-35.4 -79.7 -17.7 -106.3 5.5 -111.9C28.8 -117.4 57.5 -101.8 82.5 -79.7" fill="#BB004B"></path></g>
+
+                <g transform="translate(462.7431097696315 150.2061840265308)" style="visibility: hidden"><path id="blob2" d="M92 -84.7C113.4 -70.7 120.7 -35.4 113.5 -7.2C106.3 21 84.6 42 63.3 60.1C42 78.3 21 93.6 1.1 92.6C-18.9 91.5 -37.7 74 -50.2 55.9C-62.7 37.7 -68.9 18.9 -74.9 -6C-80.9 -30.9 -86.8 -61.8 -74.3 -75.8C-61.8 -89.8 -30.9 -86.9 2.2 -89.1C35.4 -91.4 70.7 -98.7 92 -84.7" fill="#BB004B"></path></g></svg>
+
+            <script>
+                const tween = KUTE.fromTo(
+                    '#blob1',
+                    { path: '#blob1'},
+                    { path: '#blob2'},
+                    { repeat: 999, duration: 3000, yoyo: true}
+                )
+
+                tween.start()
+            </script>
         </section>
+        <div class="spacer layer2"></div>
+
         <section>
             <h1>Nice Curves</h1>
             <p>Accusamus architecto autem dicta ea eum quae quibusdam reiciendis, saepe? Ab alias, architecto assumenda
